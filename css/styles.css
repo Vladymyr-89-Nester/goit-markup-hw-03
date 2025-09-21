@@ -30,11 +30,17 @@ ul {
 
 .container {
   width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.head-style {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .nav-style .logo {
@@ -45,7 +51,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
-  padding: 24px 76px 24px 15px;
+  margin-right: 76px;
 }
 
 .nav-style .logo .logo-color {
@@ -58,9 +64,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: block;
+  padding: 24px 0;
 }
 
 .nav-style .nav-menu .nav-menu-link:hover,
@@ -80,8 +85,6 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .contacts .con-style .mail-style:hover,
@@ -94,6 +97,7 @@ ul {
 .nav-style,
 .head {
   display: flex;
+  align-items: center;
 }
 
 .nav-menu,
@@ -102,7 +106,7 @@ ul {
 }
 
 .nav-menu {
-  padding-right: 332px;
+  margin-right: 332px;
 }
 
 .title {
@@ -119,7 +123,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   padding-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
 }
 
@@ -137,11 +141,25 @@ ul {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .title .button:hover,
 .title .button:focus {
   background-color: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advan .advan-title {
@@ -150,7 +168,7 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .advan .advan-text {
@@ -161,14 +179,13 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.list {
-  width: 264px;
-}
-
 .advan-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
+}
+
+.list {
+  width: calc((100% - 3*24px)/4);
 }
 
 .team {
@@ -183,11 +200,17 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team .team-list {
   background-color: #fff;
+  width: calc((100% - 3*24)/4);
+  border-radius: 0 0 4px 4px;
+}
+
+.box {
+  padding: 32px 0;
 }
 
 .team .advan-title {
@@ -196,9 +219,8 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team .advan-text {
@@ -207,14 +229,22 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
   text-align: center;
 }
 
 .team-box {
   display: flex;
   gap: 24px;
-  justify-content: center;
+}
+
+.portfolio-box {
+  width: calc((100% - 2*24)/3);
+}
+
+.port-box {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio .team-title {
@@ -225,7 +255,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio .advan-title {
@@ -234,11 +264,7 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  margin-bottom: 8px;
 }
 
 .portfolio .advan-text {
@@ -247,17 +273,11 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-bottom: 32px;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -265,7 +285,6 @@ ul {
 .foot-style {
   background-color: #2e2f42;
   padding-top: 100px;
-  padding-left: 15px;
   padding-bottom: 100px;
 }
 
@@ -277,8 +296,8 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
-  padding-bottom: 16px;
-  display: block;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .foot-style .logo .logo-color {
@@ -291,5 +310,5 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
 }
