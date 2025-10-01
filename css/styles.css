@@ -100,13 +100,13 @@ ul {
   align-items: center;
 }
 
+.head {
+  justify-content: space-between;
+}
+
 .nav-menu,
 .con-style {
   gap: 40px;
-}
-
-.nav-menu {
-  margin-right: 332px;
 }
 
 .title {
@@ -122,9 +122,8 @@ ul {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 48px;
   max-width: 496px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
 }
 
 .title .button {
